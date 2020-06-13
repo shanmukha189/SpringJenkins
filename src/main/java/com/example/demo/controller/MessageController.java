@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageController {
 
-	Logger logger = LoggerFactory.getLogger(MessageController.class);
+	final Logger logger = LoggerFactory.getLogger(MessageController.class);
 	
 	@GetMapping("/message") 
 	public String getMessage(){
